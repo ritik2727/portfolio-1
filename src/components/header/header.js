@@ -18,9 +18,9 @@ export default function Header() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end" activeKey="/home">
                <Nav  >
-                  <Nav.Link style={{ fontSize: '1.2rem' }} active><Link to="skills">Skills</Link></Nav.Link>
-                  <Nav.Link style={{ fontSize: '1.2rem' }} > <Link to="experience">Experience</Link></Nav.Link>
-                  <Nav.Link style={{ fontSize: '1.2rem' }}><Link to="contactus">Contact Me</Link></Nav.Link>
+                  <Nav.Link style={{ fontSize: '1.2rem' }} active><Link to="skills" smooth={true} duration={2000}>Skills</Link></Nav.Link>
+                  <Nav.Link style={{ fontSize: '1.2rem' }} > <Link to="experience" smooth={true} duration={2000}>Experience</Link></Nav.Link>
+                  <Nav.Link style={{ fontSize: '1.2rem' }}><Link to="contactus" smooth={true} duration={2000}>Contact Me</Link></Nav.Link>
                </Nav>
             </Navbar.Collapse>
          </Container >

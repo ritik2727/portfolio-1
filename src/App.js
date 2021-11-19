@@ -6,14 +6,20 @@ import Skills from './components/skills/Skills';
 import Experience from './components/experience/Experience';
 import ContactMe from './components/Contact/ContactMe';
 import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { Row, Col, Container } from 'react-bootstrap'
 function App() {
   return (
     <div style={{ backgroundColor: '#212529' }}>
       <BrowserRouter>
         <Header />
         <Content1 />
-        <Experience />
+
+        <h2 style={{ alignItems: 'center', color: 'white' }}>Hello My Skill Are</h2>
+
+
+
         <Skills />
+        <Experience />
       </BrowserRouter>
     </div>
   );
