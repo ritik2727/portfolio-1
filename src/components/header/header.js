@@ -5,16 +5,10 @@ import Typewriter from 'typewriter-effect';
 export default function Header() {
    return (
 
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
          <Container>
             <Link to="main"></Link>
-            <Navbar.Brand ><Typewriter
-               options={{
-                  strings: ['Piyush Paradkar'],
-                  autoStart: true,
-                  loop: true,
-               }}
-            /> </Navbar.Brand>
+            <Navbar.Brand  > <h3 style={{ fontStyle: 'Praise' }}>Piyush Paradkar</h3> </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end" activeKey="/home">
                <Nav  >

@@ -12,6 +12,7 @@ function App() {
     <div style={{ backgroundColor: '#212529' }}>
       <BrowserRouter>
         <Header />
+        <div style={{ height: '6em' }}></div>
         <Content1 />
 
         <h2 style={{ alignItems: 'center', color: 'white' }}>Hello My Skill Are</h2>
@@ -20,8 +21,8 @@ function App() {
 
         <Skills />
         <Experience />
-      </BrowserRouter>
-    </div>
+      </BrowserRouter >
+    </div >
   );
 }
 
