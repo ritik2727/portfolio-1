@@ -13,12 +13,12 @@ const variants = {
 
 export default function Content1() {
    return (
-      <Container style={{ fontFamily: 'Ubuntu', color: 'white', top: '2em' }} >
+      <Container style={{ fontFamily: 'Ubuntu', color: 'white', marginTop: '8em' }} >
          <Row style={{ width: '100%' }}>
-            <Col xs={13} md={8}>
+            <Col xs={20} md={8}>
                <img src='https://static.wixstatic.com/media/2be1ce_864567900845418ebfd61e297637464d~mv2.gif' style={{ width: '80%' }} />
             </Col>
-            <Col xs={6} md={4} >
+            <Col xs={12} md={4} >
                <motion.div variants={variants} initial="hidden" animate="visible" transition="delay">
                   <motion.h2 style={{ fontFamily: 'Praise', fontSize: '3em' }}   >What I Do?</motion.h2>
                   <h4   > Crazy Full Stack Mobile and Web Developer Who wants to explore every tech stack</h4>
