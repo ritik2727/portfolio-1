@@ -11,14 +11,14 @@ import { Row, Col, Container } from 'react-bootstrap'
 function App() {
   const onChange = (t) => { setDarktheme(t) };
 
-  const [darkTheme, setDarktheme] = useState(false)
+  const [darkTheme, setDarktheme] = useState(true)
   return (
     <BrowserRouter>
       <div style={{ backgroundColor: darkTheme ? '#171C28' : '#FFFFFF', height: '100%', width: '100%' }}>
         <Header isDark={darkTheme} parentCallback={onChange} />
         <Intro isDark={darkTheme} />
         <Content1 isDark={darkTheme} />
-        <h2 className='light-theme' style={{ textAlign: 'center', marginTop: '3em', alignSelf: 'center', fontFamily: 'Praise', fontSize: '4em' }}>Skills And Abilities</h2>
+        <h2 style={{ textAlign: 'center', marginTop: '3em', alignSelf: 'center', fontFamily: 'Praise', fontSize: '4em', color: darkTheme ? "white" : 'black' }}>Skills And Abilities</h2>
 
         <Skills isDark={darkTheme} />
         <Experience isDark={darkTheme} />
