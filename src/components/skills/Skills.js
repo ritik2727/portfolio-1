@@ -23,10 +23,12 @@ const skills = [
    { bgcolor: "#418A36", completed: 50, name: 'MongoDB' },
 ];
 
-export default function Skills() {
+export default function Skills(props) {
+   const { isDark } = props
+   { console.log(isDark) }
    return (
-      <motion.div style={{ marginTop: '8rem', color: 'white' }} >
-         <Container style={{ fontFamily: 'Ubuntu', color: 'white' }} >
+      <motion.div style={{ marginTop: '8rem', color: isDark ? 'white' : 'black' }} >
+         <Container style={{ fontFamily: 'Ubuntu', color: isDark ? 'white' : 'black' }} >
             <Row style={{}}>
                <Col xs={20} md={4} >
                   <motion.div variants={left} initial="hidden" animate="visible">
@@ -52,6 +54,6 @@ export default function Skills() {
                </Col>
             </Row>
          </Container >
-      </motion.div>
+      </motion.div >
    )
 }
