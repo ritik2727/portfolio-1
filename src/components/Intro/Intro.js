@@ -26,7 +26,7 @@ export default function Intro(props) {
                   , borderRadius: '1em', padding: '2em', elevation: '10em',
 
                }}>
-                  <h2 style={{ fontSize: '4em', fontFamily: 'Praise', color: 'blue' }}>Hi !, I'm Piyush Paradkar</h2>
+                  <h2 style={{ fontSize: '4em', fontFamily: 'Praise', color: 'grey' }}>Hi !, I'm Piyush Paradkar</h2>
                   <br></br>
                   <h2 style={{ fontFamily: 'monospace', fontWeight: 'bold' }} >
                      <Typewriter

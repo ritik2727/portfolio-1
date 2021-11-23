@@ -25,7 +25,7 @@ export default function Content1(props) {
                   , borderRadius: '1em', padding: '2em', elevation: '10em',
 
                }}>
-                  <motion.div variants={variants} initial="hidden" animate="visible" transition="delay" >
+                  <motion.div variants={variants} whileHover={{ scale: 1.1 }} initial="hidden" animate="visible" transition="delay" >
                      <motion.h2 style={{ fontFamily: 'Praise', fontSize: '3em' }}   >What I Do?</motion.h2>
                      <h4>⚡ Crazy Full Stack Mobile and Web Developer Who wants to explore every tech stack</h4>
                      <br></br>

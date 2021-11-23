@@ -43,7 +43,7 @@ export default function Skills(props) {
                <Col md={4}>
                </Col >
                <Col xs={12} md={4} >
-                  <motion.div variants={variants} initial="hidden" animate="visible" transition="delay">
+                  <motion.div variants={variants} initial="hidden" animate="visible" transition="delay" whileHover={{ scale: 1.1 }}>
                      <h2 style={{ fontFamily: 'Dancing Script', fontSize: '2.5em' }}>Programming Languages</h2>
                      {testData.map((item, idx) => (
                         <>
