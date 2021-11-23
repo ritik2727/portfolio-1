@@ -9,6 +9,7 @@ import Intro from './components/Intro/Intro';
 import { BoltLoader } from "react-awesome-loaders";
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import { Row, Col, Container } from 'react-bootstrap'
+
 function App() {
   const onChange = (t) => { setDarktheme(t) };
   const [loading, setLoading] = useState(false)
@@ -22,9 +23,9 @@ function App() {
   return (
     <BrowserRouter>
       {loading ?
-        <div>
+        <div class='loder'>
           <BoltLoader
-            className={"loaderbolt"}
+            className="loaderbolt"
             boltColor={"#FBFF00"}
             backgroundBlurColor={"#E0E7FF"}
           />
