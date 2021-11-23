@@ -6,10 +6,7 @@ export default function Intro(props) {
    const { isDark } = props
    const [isStopped, setIsStopped] = useState(false)
    const [isPaused, setIsPaused] = useState(false)
-   const buttonStyle = {
-      display: 'block',
-      margin: '10px auto'
-   };
+
 
    const defaultOptions = {
       loop: true,

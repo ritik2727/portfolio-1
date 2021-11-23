@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap'
-import { Link } from 'react-scroll'
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 import DarkModeToggle from "react-dark-mode-toggle";
 export default function Header(props) {
    const { isDark } = props;
@@ -14,9 +15,21 @@ export default function Header(props) {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end" activeKey="/home">
                <Nav>
-                  <Nav.Link to="Skills" smooth={true} duration={2000} style={{ color: isDark ? 'white' : 'black' }}>Skills</Nav.Link>
-                  <Nav.Link to="Experience" smooth={true} duration={2000} style={{ color: isDark ? 'white' : 'black' }}>Experience</Nav.Link>
-                  <Nav.Link to="ContactMe" smooth={true} duration={2000} style={{ color: isDark ? 'white' : 'black' }}>Contact Me</Nav.Link>
+                  <li>
+                     <Link to="/Skills" className="logo">
+                        Skills
+                     </Link>
+                  </li>
+                  <li>
+                     <ScrollLink to="services" smooth={true}>
+                        Projects
+                     </ScrollLink>
+                  </li>
+                  <li>
+                     <ScrollLink to="features" smooth={true}>
+                        About
+                     </ScrollLink>
+                  </li>
                </Nav>
             </Navbar.Collapse>
          </Container >
