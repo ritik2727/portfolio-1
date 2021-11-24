@@ -9,6 +9,7 @@ import Intro from './components/Intro/Intro';
 import { BoltLoader } from "react-awesome-loaders";
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import { Row, Col, Container } from 'react-bootstrap'
+import './App.css'
 
 function App() {
   const onChange = (t) => { setDarktheme(t) };
@@ -35,9 +36,9 @@ function App() {
           <Content1 id="whatido" isDark={darkTheme} />
           <h2 style={{ textAlign: 'center', marginTop: '3em', alignSelf: 'center', fontFamily: 'Praise', fontSize: '4em', color: darkTheme ? "white" : 'black' }}>Skills And Abilities</h2>
 
-          <Skills id="skills" isDark={darkTheme} />
-          <Experience id="experience" isDark={darkTheme} />
-          <ContactMe id="contact" isDark={darkTheme} />
+          <Skills  isDark={darkTheme} />
+          <Experience  isDark={darkTheme} />
+          <ContactMe  isDark={darkTheme} />
         </div >}
 
     </BrowserRouter >
