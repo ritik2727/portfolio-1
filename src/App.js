@@ -8,7 +8,6 @@ import ContactMe from './components/Contact/ContactMe';
 import Intro from './components/Intro/Intro';
 import { BoltLoader } from "react-awesome-loaders";
 import { BrowserRouter, Route, Switch } from "react-router-dom"
-import { Row, Col, Container } from 'react-bootstrap'
 
 function App() {
   const onChange = (t) => { setDarktheme(t) };
